@@ -22,7 +22,30 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+### Command
+
+```ruby
+markdown_linker make ${URL}...
+```
+
+### Sample
+
+```ruby
+markdown_linker make https://github.com/ryokosuge/markdown_linker
+Process complete
+[GitHub - ryokosuge/markdown_linker: Tools to generate markdown style links.](https://github.com/ryokosuge/markdown_linker)
+```
+
+```ruby
+markdown_linker make http://qiita.com/ryokosuge/items/c903e04da555294299ae http://qiita.com/ryokosuge/items/2551cd4faa9dca324342 http://qiita.com/ryokosuge/items/64bb6df23fbf98325c5c
+Process complete
+[【iOS】バーコードリーダーをSwiftで作ってみた - Qiita](http://qiita.com/ryokosuge/items/c903e04da555294299ae)
+Process complete
+[【iOS】Carthageで入れたframeworkをPlaygroundで使用する - Qiita](http://qiita.com/ryokosuge/items/2551cd4faa9dca324342)
+Process complete
+[【iOS】MarkdownをHTMLにレンダリングするライブラリを使って、Qiitaの記事をMarkdownで表示してみた - Qiita](http://qiita.com/ryokosuge/items/64bb6df23fbf98325c5c)
+```
+
 
 ## Development
 
