@@ -13,7 +13,9 @@ Gem::Specification.new do |spec|
   spec.description = MarkdownLinker::DESCRIPTION
   spec.homepage    = 'https://github.com/ryokosuge/markdown-linker'
   spec.license       = "MIT"
+
   spec.required_ruby_version = '>= 2.0.0'
+  spec.rubygems_version = '1.3.6'
 
   # Prevent pushing this gem to RubyGems.org. To allow pushes either set the 'allowed_push_host'
   # to allow pushing to a single host or delete this section to allow pushing to any host.
@@ -31,8 +33,9 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency 'nokogiri', '~> 1.6', '>= 1.6.8'
-  spec.add_runtime_dependency 'commander', '~> 4.0', '>= 4.0.0'
+  spec.add_dependency 'commander', "~> 4.4"
+
+  spec.add_runtime_dependency("nokogiri", [">= 1.3.3"])
 
   spec.add_development_dependency "bundler", "~> 1.13"
   spec.add_development_dependency "rake", "~> 10.0"
